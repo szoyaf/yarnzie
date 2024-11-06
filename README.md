@@ -22,10 +22,8 @@ final DateTime myFinalDate = DateTime.now();
 
 ## Implementasi Tugas 7
 - Inisialisasi proyek Flutter:
-```bash flutter create yarnzie
-```
+```bash flutter create yarnzie```
 - Buka virtual machine (VM) di Android Studio dan jalankan perintah berikut:
-```bash flutter run
-```
+```bash flutter run```
 - Modifikasi main.dart untuk mengonfigurasi tata letak aplikasi Yarnzie.
 - Halaman beranda (home) dibuat di file menu.dart, berisi dua kelas stateless widget untuk komponen layar utama dan tombol.

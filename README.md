@@ -27,8 +27,6 @@ Dalam implementasi aplikasi Yarnzie, saya menggunakan dua jenis form field:
 
 - **TextFormField**: Digunakan untuk menerima input berupa teks. Form ini dilengkapi dengan validasi untuk memastikan input tidak kosong. Untuk input angka, saya menambahkan keyboardType: TextInputType.number agar hanya angka yang dapat diinput, serta melakukan validasi untuk angka negatif.
 
-- **DropdownButtonFormField**: Form field ini dibuat berdasarkan enum yang dideklarasikan di luar class. Dengan dropdown ini, pengguna dapat memilih salah satu opsi. Karena terdapat default value, maka form ini tidak memerlukan validator untuk memastikan nilai selalu terisi.
-
 ## Pengaturan Tema di Flutter
 Flutter memungkinkan pengaturan tema untuk menjaga konsistensi desain. Pada widget MaterialApp, saya mengatur tema dengan properti theme, lalu memasukkan konfigurasi tema menggunakan ThemeData(). Contohnya:
 

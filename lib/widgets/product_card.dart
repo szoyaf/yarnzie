@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yarnzie/screens/list_productentry.dart';
 import 'package:yarnzie/screens/productentry_form.dart';
 
 class ItemHomepage {
@@ -36,6 +37,12 @@ class ItemCard extends StatelessWidget {
               context,
               MaterialPageRoute(
                   builder: (context) => const ProductEntryFormPage()),
+            );
+          } else if (item.name == "Lihat Produk") {
+            Navigator.push(context,
+              MaterialPageRoute(
+                builder: (context) => const ProductEntryPage()
+              ),
             );
           }
         },

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yarnzie/screens/list_productentry.dart';
 import 'package:yarnzie/screens/menu.dart';
 import 'package:yarnzie/screens/productentry_form.dart';
 
@@ -51,8 +52,7 @@ class LeftDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: const Icon(Icons.mood),
-            title: const Text('Tambah Item'),
-            // Bagian redirection ke MoodEntryFormPage
+            title: const Text('Tambah Produk'),
             onTap: () {
               Navigator.pushReplacement(
                   context,
@@ -61,7 +61,17 @@ class LeftDrawer extends StatelessWidget {
                   ),
                 );
             },
-          )
+          ),
+          ListTile(
+            leading: const Icon(Icons.add_reaction_rounded),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProductEntryPage()),
+                );
+            },
+          ),
         ],
       ),
     );
